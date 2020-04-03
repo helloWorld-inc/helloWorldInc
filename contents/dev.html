@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <link href="../css/style.css" type="text/css" rel="stylesheet">
-  <title>Hello World Inc.</title>
-
-
+  <title>DevOps page | Hello World Inc.</title> 
 </head>
 
 
-<body>
+<body onload="renderDate()">
     <div class="top">
         <img src="../images/logo.jpg" width="250px" height="200px" id="logo">    
       </div>
@@ -30,22 +27,46 @@
       </li>
     </ul>
 
-    <h1>This is Dev page.</h1>
-
-    <img src="../images/calendar.jpg" width="500px" height="450" id="calendar">
+    <h1>DevOps page.</h1>
   </div>
 
+  <!---------------------- Calendar -------------------------->
+  <br/>
+  <div class="wrapper">
+    <div class="calendar">
+        <div class="month">
+            <div class=" prev" onclick="moveDate('prev')">
+                <span>&#10094</span>
+            </div> 
+            <div>
+                <h2 id="month">June</h2>
+                <p id="date_str">Sat Jun 01 2019</p>
+            </div>
+            <div class="next" onclick="moveDate('next')">
+                <span>&#10095</span>
+            </div>
 
-
-
-
-
+        </div>            
+        <div class="weekends">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+        <div class="days">
+         
+        </div>    
+    </div>
+  </div> 
+ <br/>
+  <img id="frontImage" src="../images/DevOps.png" width="500px" height=" 350px">
 
   <div class="footer">
-
-      
+   
   </div>
-
+  <script src="../js/calendar.js"></script>
 </body>
-
 </html>

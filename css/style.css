@@ -172,3 +172,36 @@ margin-right: auto;
   background-color: rgba(0,0,0,0.2);
   cursor: pointer;
 }
+
+/* ----------- Front-end assignment calendar -------------*/
+
+.eventFront:hover {
+  cursor: pointer;
+}
+
+.frontAssignment {
+  background-color: red;
+  color: #fff;
+}
+
+/* ----------- DevOps assignment calendar -------------*/
+
+.eventDev:hover {
+  cursor: pointer;
+}
+
+.devAssignment {
+  background-color: coral;
+  color: #fff;
+}
+
+/* ----------- Uiux assignment calendar -------------*/
+
+.eventUxui:hover {
+  cursor: pointer;
+}
+
+.uxuiAssignment {
+  background-color: green;
+  color: #fff;
+}
